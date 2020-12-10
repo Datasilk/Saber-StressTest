@@ -1,0 +1,45 @@
+﻿
+<div class="row prepare-stress-test pad-bottom {{run}}hide{{/run}}">
+    <div class="col ten tablet-twelve">
+        <div class="row">
+            <h5>Prepare Stress Test</h5>
+            <p>
+                Before you can run your stress test, you must first prepare for the test.
+                This will generate 100 web pages in your website that will be used for the
+                stress test.
+            </p>
+        </div>
+    </div>
+    <div class="col two tablet-twelve right">
+        <div class="text-right pad-top-sm"><button>Prepare Test</button></div>
+    </div>
+</div>
+<div class="row run-stress-test pad-bottom {{prepare}}hide{{/prepare}}">
+    <div class="col ten tablet-twelve">
+        <div class="row">
+            <h5>Run A Stress Test</h5>
+            <p>
+                By running a stress test, you will open a new browser tab that will load random test web pages
+                inside 24 iframes as quickly as possible. As soon as each iframe loads, they will redirect
+                to another random test web page immediately afterwards. Once you load 500 test web pages, the
+                test results will appear.
+            </p>
+        </div>
+    </div>
+    <div class="col two tablet-twelve right">
+        <div class="text-right pad-top-sm"><a href="/runstresstest" target="_blank" class="button">Run Test</a></div>
+    </div>
+</div>
+<div class="row delete-stress-test pad-bottom {{prepare}}hide{{/prepare}}">
+    <div class="col ten tablet-twelve">
+        <div class="row">
+            <h5>Delete Stress Test</h5>
+            <p>
+                Once you are done with your stress test, you can delete all web pages associated with the test.
+            </p>
+        </div>
+    </div>
+    <div class="col two tablet-twelve right">
+        <div class="text-right pad-top-sm"><button>Delete Test</button></div>
+    </div>
+</div>

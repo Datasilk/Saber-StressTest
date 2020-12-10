@@ -1,0 +1,20 @@
+﻿<script>
+    var startTime = new Date().getTime();
+    window.parent.total.time += startTime - performance.timing.navigationStart; 
+    window.parent.total.loaded++;
+</script>
+<div class="stress-test">
+    <h1>{{title}}</h1>
+    <h2>{{sub-title}}</h2>
+    <p>{{paragraph-1}}</p>
+    <p>{{paragraph-2}}</p>
+    <p>{{paragraph-3}}</p>
+    {{user}}
+        Your user ID is {{userid}}. 
+        Your username is {{username}}
+    {{/user}}
+    {{no-user}}
+        No user is currently signed in.
+    {{/no-user}}
+    The current page you are on is {{page-url}}.
+</div>
