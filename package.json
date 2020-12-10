@@ -1,5 +1,5 @@
 {
-  "name": "resetcache",
+  "name": "stresstest",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datasilk/saber-resetcache.git"
+    "url": "git+https://github.com/datasilk/saber-stresstest.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/datasilk/saber-resetcache/issues"
+    "url": "https://github.com/datasilk/saber-stresstest/issues"
   },
-  "homepage": "https://github.com/datasilk/saber-resetcache#readme",
+  "homepage": "https://github.com/datasilk/saber-stresstest#readme",
   "devDependencies": {
     "7zip-bin": "^5.0.3",
     "gulp": "^4.0.2",
