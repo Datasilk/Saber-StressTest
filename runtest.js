@@ -1,5 +1,5 @@
 ﻿(function () {
-    var iframes = $('.iframes');
+    var iframes = S('.iframes');
     for (var x = 0; x < 24; x++) {
         var iframe = document.createElement('iframe');
         iframe.id = 'iframe_' + x;
@@ -7,16 +7,16 @@
         iframes.append(iframe);
     }
 
-    var totalTime = $('.total-time');
-    var totalLoaded = $('.total-loaded');
-    var total500 = $('.total-500');
-    var totalAvg = $('.total-avg');
+    var totalTime = S('.total-time');
+    var totalLoaded = S('.total-loaded');
+    var total500 = S('.total-500');
+    var totalAvg = S('.total-avg');
     var datestart = Date.now();
     window.total = {
         loaded: 0,
         time: 0
     };
-    $('iframe').on('load', (e) => {
+    S('iframe').on('load', (e) => {
         var dif = Date.now() - datestart;
         totalTime.html(
             ("0" + Math.round(dif / 1000 / 60 / 60)).slice(-2) + ':' +

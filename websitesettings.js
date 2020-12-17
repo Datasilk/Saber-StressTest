@@ -1,17 +1,17 @@
 ﻿(function () {
-    $('.prepare-stress-test button').on('click', () => {
+    S('.prepare-stress-test button').on('click', () => {
         S.ajax.post('StressTest/Prepare', {}, () => {
-            $('.prepare-stress-test').addClass('hide');
-            $('.run-stress-test').removeClass('hide');
-            $('.delete-stress-test').removeClass('hide');
+            S('.prepare-stress-test').addClass('hide');
+            S('.run-stress-test').removeClass('hide');
+            S('.delete-stress-test').removeClass('hide');
         })
     });
 
-    $('.delete-stress-test button').on('click', () => {
+    S('.delete-stress-test button').on('click', () => {
         S.ajax.post('StressTest/Delete', {}, () => {
-            $('.prepare-stress-test').removeClass('hide');
-            $('.run-stress-test').addClass('hide');
-            $('.delete-stress-test').addClass('hide');
+            S('.prepare-stress-test').removeClass('hide');
+            S('.run-stress-test').addClass('hide');
+            S('.delete-stress-test').addClass('hide');
         })
     });
 })();
