@@ -14,7 +14,7 @@ function publishToPlatform(platform) {
 
     return gulp.src([
         //include custom resources
-        'runtest.html', 'runtest.js', 'test.html', 'test.js', 'test.json', 'test_en.json', 'websitesettings.html', 'websitesettings.js'
+        'runtest.html', 'runtest.js', 'test.html', 'test.js', 'test.json', 'test_en.json', 'websitesettings.html', 'websitesettings.js',
         //include all files from published folder
         release + platform + '/publish/*',
         //exclude unwanted dependencies
